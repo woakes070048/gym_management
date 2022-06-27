@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include gym_management *.css
+recursive-include gym_management *.csv
+recursive-include gym_management *.html
+recursive-include gym_management *.ico
+recursive-include gym_management *.js
+recursive-include gym_management *.json
+recursive-include gym_management *.md
+recursive-include gym_management *.png
+recursive-include gym_management *.py
+recursive-include gym_management *.svg
+recursive-include gym_management *.txt
+recursive-exclude gym_management *.pyc
