@@ -117,7 +117,7 @@ doctype_list_js = {
 # }
 doc_events = {
     "Measurement History": {
-        "on_update": "gym_management.crud_events.measurement_history"
+        "on_update": "gym_management.gym_management.doctype.measurement_history.measurement_history.measurement_history"
     },
 }
 
