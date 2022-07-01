@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:exercise_name",
+ "creation": "2022-06-28 17:01:56.993410",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "exercise_name",
+  "item_group",
+  "column_break_3",
+  "item_code",
+  "item_name",
+  "details_section",
+  "benefits",
+  "column_break_8",
+  "steps"
+ ],
+ "fields": [
+  {
+   "fieldname": "exercise_name",
+   "fieldtype": "Data",
+   "label": "Exercise Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "benefits",
+   "fieldtype": "Text Editor",
+   "label": "Benefits"
+  },
+  {
+   "fieldname": "steps",
+   "fieldtype": "Text Editor",
+   "label": "Steps"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Equipment",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Equipment Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Table MultiSelect",
+   "label": "Gym Exercise For",
+   "options": "Gym Exercise For"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-06-29 21:27:30.121935",
+ "modified_by": "Administrator",
+ "module": "GYM Management",
+ "name": "Gym Exercise",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "exercise_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "exercise_name"
+}

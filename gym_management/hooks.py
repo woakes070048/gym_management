@@ -12,6 +12,12 @@ app_license = "MIT"
 # Includes in <head>
 # ------------------
 
+
+
+fixtures = [{
+		"doctype": "Translation"
+		},
+	]
 # include js, css files in header of desk.html
 # app_include_css = "/assets/gym_management/css/gym_management.css"
 # app_include_js = "/assets/gym_management/js/gym_management.js"
@@ -32,7 +38,14 @@ app_license = "MIT"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+				"Customer" : "public/js/customer.js",
+				"Item" : "public/js/item.js"
+				}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+doctype_list_js = {
+					"Item" : "public/js/item_list.js"
+					}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
@@ -102,6 +115,11 @@ app_license = "MIT"
 # 		"on_trash": "method"
 #	}
 # }
+doc_events = {
+    "Measurement History": {
+        "on_update": "gym_management.crud_events.measurement_history"
+    },
+}
 
 # Scheduled Tasks
 # ---------------

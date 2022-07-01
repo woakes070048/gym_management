@@ -1,0 +1,210 @@
+{
+ "cards_label": "Configuration & Reports",
+ "category": "Modules",
+ "charts": [],
+ "creation": "2022-06-29 21:51:18.726487",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "getting-started",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Gym Management",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Configuration",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Equipment",
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Exercise Type",
+   "link_to": "Item Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Exercise",
+   "link_to": "Gym Exercise",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Product / Item",
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Member Setup",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Registered Member",
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Registered Member Type",
+   "link_to": "Customer Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Measurement History",
+   "link_to": "Measurement History",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Member",
+   "link_to": "Member",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Membership",
+   "link_to": "Membership",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Membership Type",
+   "link_to": "Membership Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Trainer Setup",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Trainer",
+   "link_to": "Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Trainer Skill",
+   "link_to": "Skill",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-06-30 14:29:08.317523",
+ "modified_by": "Administrator",
+ "module": "GYM Management",
+ "name": "Gym Management",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "Equipment",
+   "link_to": "Item",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Gym Exercise Type",
+   "link_to": "Item Group",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Gym Exercise",
+   "link_to": "Gym Exercise",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Registered Member",
+   "link_to": "Customer",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Registered Member Type",
+   "link_to": "Customer Group",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Trainer",
+   "link_to": "Employee",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Trainer Skill",
+   "link_to": "Skill",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Measurement History",
+   "link_to": "Measurement History",
+   "type": "DocType"
+  }
+ ]
+}

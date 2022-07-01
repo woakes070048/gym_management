@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-28 17:13:54.409148",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gym_exercise_for"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "gym_exercise_for",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Gym Exercise For",
+   "options": "Item Group"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-06-29 21:26:49.313688",
+ "modified_by": "Administrator",
+ "module": "GYM Management",
+ "name": "Gym Exercise For",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
