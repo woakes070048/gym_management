@@ -150,7 +150,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-07-01 11:26:58.992624",
+ "modified": "2022-07-04 14:58:25.140091",
  "modified_by": "Administrator",
  "module": "GYM Management",
  "name": "Gym Management",
@@ -159,12 +159,12 @@
  "pin_to_top": 0,
  "shortcuts": [
   {
-   "color": "#159159",
-   "doc_view": "List",
-   "format": "{} Active",
+   "color": "",
+   "doc_view": "",
+   "format": "",
    "label": "Equipment",
    "link_to": "Item",
-   "stats_filter": "{\n    \"status\": [\"=\" , [\"Active\"]],\n    \"is_gym_equipment\" : [\"=\" , [\"1\"]]\n}",
+   "stats_filter": "",
    "type": "DocType"
   },
   {
