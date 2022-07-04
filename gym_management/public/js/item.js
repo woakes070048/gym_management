@@ -22,13 +22,14 @@ frappe.ui.form.on("Item", "refresh", function(frm) {
         frm.set_value('disabled',1);
         frm.save();
         }, __("Status"));
+});
 
+
+frappe.ui.form.on("Item", "before_save", function(frm) {
     if(frm.doc.disabled == 1){
         frm.set_value('status',"Out of Service");
-        frm.save();
     }
     else{
         frm.set_value('status',"Active");
-        frm.save();
     }
 });
