@@ -17,6 +17,18 @@ app_license = "MIT"
 fixtures = [{
 		"doctype": "Translation"
 		},
+		{
+		"doctype": "Role",
+		"filters": {
+			"name": ["in", ["Gym Manager", "Gym Operator", "Guest"]]
+			}
+		},
+		{
+		"doctype": "Custom DocPerm",
+		"filters": {
+			"role": ["in", ["Gym Manager", "Gym Operator"]]
+			}
+		}
 	]
 # include js, css files in header of desk.html
 # app_include_css = "/assets/gym_management/css/gym_management.css"
@@ -40,7 +52,9 @@ fixtures = [{
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 doctype_js = {
 				"Customer" : "public/js/customer.js",
-				"Item" : "public/js/item.js"
+				"Item" : "public/js/item.js",
+				"Appointment" : "public/js/appointment.js",
+				"Employee" : "public/js/employee.js"
 				}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 doctype_list_js = {
@@ -119,6 +133,9 @@ doc_events = {
     "Measurement History": {
         "on_update": "gym_management.gym_management.doctype.measurement_history.measurement_history.measurement_history"
     },
+    "Customer": {
+    	"on_update": "gym_management.api.customer.create_user_permission"
+    }
 }
 
 # Scheduled Tasks

@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{diet_plan}",
+ "creation": "2022-07-06 10:44:53.160122",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "diet_plan",
+  "total_days_of_diet",
+  "diet_meal"
+ ],
+ "fields": [
+  {
+   "fieldname": "diet_plan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Diet Plan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_days_of_diet",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Days of Diet ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "diet_meal",
+   "fieldtype": "Table MultiSelect",
+   "label": "Diet Meal",
+   "options": "Diet Meal Plan",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Assign Diet",
+   "link_doctype": "Assign Diet Schedule",
+   "link_fieldname": "diet_plan"
+  }
+ ],
+ "modified": "2022-07-06 15:46:41.322213",
+ "modified_by": "Administrator",
+ "module": "GYM Management",
+ "name": "Diet Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Operator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "diet_plan",
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

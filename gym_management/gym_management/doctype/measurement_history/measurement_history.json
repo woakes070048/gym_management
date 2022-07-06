@@ -33,13 +33,15 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Date"
+   "label": "Date",
+   "reqd": 1
   },
   {
    "fieldname": "customer",
    "fieldtype": "Link",
    "label": "Registered Member",
-   "options": "Customer"
+   "options": "Customer",
+   "reqd": 1
   },
   {
    "fieldname": "height_weight",
@@ -49,12 +51,16 @@
   {
    "fieldname": "weight",
    "fieldtype": "Float",
-   "label": "Weight (Kg)"
+   "label": "Weight (Kg)",
+   "precision": "2",
+   "reqd": 1
   },
   {
    "fieldname": "height",
    "fieldtype": "Float",
-   "label": "Height (cm)"
+   "label": "Height (cm)",
+   "precision": "2",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_6",
@@ -64,13 +70,15 @@
    "fieldname": "bmi",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "BMI"
+   "label": "BMI",
+   "precision": "2"
   },
   {
    "fieldname": "bmr",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "BMR"
+   "label": "BMR",
+   "precision": "2"
   },
   {
    "description": "All body measurements are in Inches.",
@@ -81,22 +89,26 @@
   {
    "fieldname": "neck",
    "fieldtype": "Float",
-   "label": "Neck"
+   "label": "Neck",
+   "precision": "2"
   },
   {
    "fieldname": "biceps",
    "fieldtype": "Float",
-   "label": "Biceps"
+   "label": "Biceps",
+   "precision": "2"
   },
   {
    "fieldname": "hips",
    "fieldtype": "Float",
-   "label": "Hips"
+   "label": "Hips",
+   "precision": "2"
   },
   {
    "fieldname": "calf",
    "fieldtype": "Float",
-   "label": "Calf"
+   "label": "Calf",
+   "precision": "2"
   },
   {
    "fieldname": "column_break_14",
@@ -105,17 +117,20 @@
   {
    "fieldname": "chest",
    "fieldtype": "Float",
-   "label": "Chest"
+   "label": "Chest",
+   "precision": "2"
   },
   {
    "fieldname": "waist",
    "fieldtype": "Float",
-   "label": "Waist"
+   "label": "Waist",
+   "precision": "2"
   },
   {
    "fieldname": "thighs",
    "fieldtype": "Float",
-   "label": "Thighs"
+   "label": "Thighs",
+   "precision": "2"
   },
   {
    "fieldname": "amended_from",
@@ -130,12 +145,13 @@
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Naming Series",
-   "options": "MH-"
+   "options": "MH-",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-30 13:34:22.783252",
+ "modified": "2022-07-05 13:15:34.999271",
  "modified_by": "Administrator",
  "module": "GYM Management",
  "name": "Measurement History",
@@ -150,6 +166,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Manager",
    "share": 1,
    "write": 1
   }

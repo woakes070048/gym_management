@@ -142,5 +142,37 @@
   "parenttype": null,
   "source_text": "Customer Details",
   "translated_text": "Registered Member Details"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "en-US",
+  "modified": "2022-07-05 10:42:32.882495",
+  "name": "b89105c694",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "source_text": "Add Customers",
+  "translated_text": "Add Registered Members"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "en-US",
+  "modified": "2022-07-05 10:43:55.967680",
+  "name": "6bd0ce29cd",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "source_text": "Add Employees",
+  "translated_text": "Add Trainers"
  }
 ]

@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{food_name}",
+ "creation": "2022-07-05 17:43:57.339026",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "image",
+  "food_name",
+  "uom",
+  "nutrition_information_section",
+  "calories",
+  "protein",
+  "carbohydrates",
+  "column_break_8",
+  "fat",
+  "fibres",
+  "sodium"
+ ],
+ "fields": [
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "in_preview": 1,
+   "label": "Image",
+   "options": "image",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "food_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Food Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nutrition_information_section",
+   "fieldtype": "Section Break",
+   "label": "Nutrition Information"
+  },
+  {
+   "fieldname": "calories",
+   "fieldtype": "Float",
+   "label": "Calories"
+  },
+  {
+   "fieldname": "protein",
+   "fieldtype": "Float",
+   "label": "Protein"
+  },
+  {
+   "fieldname": "carbohydrates",
+   "fieldtype": "Float",
+   "label": "Carbohydrates"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fat",
+   "fieldtype": "Float",
+   "label": "Fat"
+  },
+  {
+   "fieldname": "fibres",
+   "fieldtype": "Float",
+   "label": "Fibres"
+  },
+  {
+   "fieldname": "sodium",
+   "fieldtype": "Float",
+   "label": "Sodium"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-06 15:45:49.625996",
+ "modified_by": "Administrator",
+ "module": "GYM Management",
+ "name": "Food Item",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Operator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "food_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "food_name"
+}

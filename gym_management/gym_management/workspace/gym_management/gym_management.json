@@ -148,9 +148,111 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Schedule",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Schedule",
+   "link_to": "Event",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appointment",
+   "link_to": "Appointment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Diet",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Food Item",
+   "link_to": "Food Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Diet Meal",
+   "link_to": "Diet Meal",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Food Interval",
+   "link_to": "Food Interval",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Diet Plan",
+   "link_to": "Diet Plan",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Assign Diet Schedule",
+   "link_to": "Assign Diet Schedule",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Measurement Analysis",
+   "link_to": "Measurement Analysis",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2022-07-04 14:58:25.140091",
+ "modified": "2022-07-06 14:29:19.703067",
  "modified_by": "Administrator",
  "module": "GYM Management",
  "name": "Gym Management",
@@ -161,10 +263,10 @@
   {
    "color": "",
    "doc_view": "",
-   "format": "",
+   "format": "{} Active",
    "label": "Equipment",
    "link_to": "Item",
-   "stats_filter": "",
+   "stats_filter": "{\n    \"is_gym_equipment\":[\"=\",\"1\"],\n    \"status\":[\"=\",\"Active\"]\n}",
    "type": "DocType"
   },
   {
@@ -181,14 +283,22 @@
   },
   {
    "doc_view": "",
+   "format": "{} Total",
    "label": "Registered Member",
    "link_to": "Customer",
+   "stats_filter": "{\n    \"is_gym_member\":[\"=\",\"1\"]\n}",
    "type": "DocType"
   },
   {
    "doc_view": "",
    "label": "Registered Member Type",
    "link_to": "Customer Group",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Measurement History",
+   "link_to": "Measurement History",
    "type": "DocType"
   },
   {
@@ -205,8 +315,50 @@
   },
   {
    "doc_view": "",
-   "label": "Measurement History",
-   "link_to": "Measurement History",
+   "label": "Food Item",
+   "link_to": "Food Item",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Food Interval",
+   "link_to": "Food Interval",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Diet Meal",
+   "link_to": "Diet Meal",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Diet Plan",
+   "link_to": "Diet Plan",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Assign Diet Schedule",
+   "link_to": "Assign Diet Schedule",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Appointment",
+   "link_to": "Appointment",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Gym Schedule",
+   "link_to": "Event",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "Calendar",
+   "label": "Appointment Schedule",
+   "link_to": "Event",
    "type": "DocType"
   }
  ]
