@@ -30,7 +30,7 @@
    "label": "Equipment",
    "link_to": "Item",
    "link_type": "DocType",
-   "onboard": 0,
+   "onboard": 1,
    "type": "Link"
   },
   {
@@ -75,7 +75,7 @@
    "label": "Registered Member",
    "link_to": "Customer",
    "link_type": "DocType",
-   "onboard": 0,
+   "onboard": 1,
    "type": "Link"
   },
   {
@@ -93,7 +93,7 @@
    "label": "Measurement History",
    "link_to": "Measurement History",
    "link_type": "DocType",
-   "onboard": 0,
+   "onboard": 1,
    "type": "Link"
   },
   {
@@ -102,7 +102,7 @@
    "label": "Member",
    "link_to": "Member",
    "link_type": "DocType",
-   "onboard": 0,
+   "onboard": 1,
    "type": "Link"
   },
   {
@@ -137,7 +137,7 @@
    "label": "Trainer",
    "link_to": "Employee",
    "link_type": "DocType",
-   "onboard": 0,
+   "onboard": 1,
    "type": "Link"
   },
   {
@@ -190,7 +190,7 @@
    "label": "Food Item",
    "link_to": "Food Item",
    "link_type": "DocType",
-   "onboard": 0,
+   "onboard": 1,
    "only_for": "",
    "type": "Link"
   },
@@ -220,7 +220,7 @@
    "label": "Diet Plan",
    "link_to": "Diet Plan",
    "link_type": "DocType",
-   "onboard": 0,
+   "onboard": 1,
    "only_for": "",
    "type": "Link"
   },
@@ -230,7 +230,46 @@
    "label": "Assign Diet Schedule",
    "link_to": "Assign Diet Schedule",
    "link_type": "DocType",
+   "onboard": 1,
+   "only_for": "",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Workout",
+   "link_type": "DocType",
    "onboard": 0,
+   "only_for": "",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Workout",
+   "link_to": "Workout",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Workout Plan",
+   "link_to": "Workout Plan",
+   "link_type": "DocType",
+   "onboard": 1,
+   "only_for": "",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Assign Workout Schedule",
+   "link_to": "Assign Workout Schedule",
+   "link_type": "DocType",
+   "onboard": 1,
    "only_for": "",
    "type": "Link"
   },
@@ -248,11 +287,29 @@
    "label": "Measurement Analysis",
    "link_to": "Measurement Analysis",
    "link_type": "Report",
-   "onboard": 0,
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Diet Schedule Analysis",
+   "link_to": "Diet Schedule Analysis",
+   "link_type": "Report",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Workout Schedule Analysis",
+   "link_to": "Workout Schedule Analysis",
+   "link_type": "Report",
+   "onboard": 1,
    "type": "Link"
   }
  ],
- "modified": "2022-07-06 14:29:19.703067",
+ "modified": "2022-07-07 17:27:41.335702",
  "modified_by": "Administrator",
  "module": "GYM Management",
  "name": "Gym Management",
@@ -271,28 +328,10 @@
   },
   {
    "doc_view": "",
-   "label": "Gym Exercise Type",
-   "link_to": "Item Group",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "",
-   "label": "Gym Exercise",
-   "link_to": "Gym Exercise",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "",
    "format": "{} Total",
    "label": "Registered Member",
    "link_to": "Customer",
    "stats_filter": "{\n    \"is_gym_member\":[\"=\",\"1\"]\n}",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "",
-   "label": "Registered Member Type",
-   "link_to": "Customer Group",
    "type": "DocType"
   },
   {
@@ -309,26 +348,8 @@
   },
   {
    "doc_view": "",
-   "label": "Trainer Skill",
-   "link_to": "Skill",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "",
    "label": "Food Item",
    "link_to": "Food Item",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "",
-   "label": "Food Interval",
-   "link_to": "Food Interval",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "",
-   "label": "Diet Meal",
-   "link_to": "Diet Meal",
    "type": "DocType"
   },
   {
@@ -345,14 +366,20 @@
   },
   {
    "doc_view": "",
-   "label": "Appointment",
-   "link_to": "Appointment",
+   "label": "Workout Plan",
+   "link_to": "Workout Plan",
    "type": "DocType"
   },
   {
    "doc_view": "",
-   "label": "Gym Schedule",
-   "link_to": "Event",
+   "label": "Assign Workout Schedule",
+   "link_to": "Assign Workout Schedule",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Appointment",
+   "link_to": "Appointment",
    "type": "DocType"
   },
   {

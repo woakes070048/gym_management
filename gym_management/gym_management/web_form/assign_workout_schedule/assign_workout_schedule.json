@@ -9,12 +9,13 @@
  "amount": 0.0,
  "amount_based_on_field": 0,
  "apply_document_permissions": 1,
- "breadcrumbs": "[{\"label\":_(\"Back To Workout Schedule\"), \"route\":\"assign-workout-schedule\"}, {\"label\":_(\"Assign Diet Schedule\"), \"route\":\"assign-diet-schedule\"}]",
+ "breadcrumbs": "[{\"label\":_(\"Back To Diet Schedule\"), \"route\":\"assign-diet-schedule\"}, {\"label\":_(\"Assign Workout Schedule\"), \"route\":\"assign-workout-schedule\"}]",
  "button_label": "",
- "creation": "2022-07-06 14:07:05.731210",
+ "client_script": "",
+ "creation": "2022-07-06 18:02:34.580120",
  "currency": "INR",
  "custom_css": "button#new{\n    display:none;\n}\n\nbutton.btn.btn-primary.btn-sm.ml-2{\n    display:none;\n}\n\ndiv#datatable {\n    font-size: 12px;\n}\n\n@media (min-width: 1200px){\n.container {\n     padding-left: 2rem; \n     padding-right: 2rem;\n    }\n}\n\n.table th, .table td {\n    padding: 0.25rem !important;\n}",
- "doc_type": "Assign Diet Schedule",
+ "doc_type": "Assign Workout Schedule",
  "docstatus": 0,
  "doctype": "Web Form",
  "idx": 0,
@@ -23,14 +24,14 @@
  "is_standard": 1,
  "login_required": 1,
  "max_attachment_size": 0,
- "modified": "2022-07-07 14:04:57.168067",
+ "modified": "2022-07-07 14:04:07.883562",
  "modified_by": "Administrator",
  "module": "GYM Management",
- "name": "assign-diet-schedule",
+ "name": "assign-workout-schedule",
  "owner": "Administrator",
  "payment_button_label": "Buy Now",
  "published": 1,
- "route": "assign-diet-schedule",
+ "route": "assign-workout-schedule",
  "route_to_success_link": 0,
  "show_attachments": 0,
  "show_in_grid": 1,
@@ -38,14 +39,14 @@
  "sidebar_items": [
   {
    "enabled": 1,
-   "reference_doctype": "Assign Workout Schedule",
-   "route": "/assign-workout-schedule",
-   "title": "My Workout Schedule"
+   "reference_doctype": "Assign Diet Schedule",
+   "route": "/assign-diet-schedule",
+   "title": "My Diet Schedule"
   }
  ],
  "success_message": "",
- "success_url": "/assign-diet-schedule",
- "title": "Assign Diet Schedule",
+ "success_url": "/assign-workout-schedule",
+ "title": "Assign Workout Schedule",
  "web_form_fields": [
   {
    "allow_read_on_all_link_options": 0,
@@ -74,23 +75,23 @@
   },
   {
    "allow_read_on_all_link_options": 0,
-   "fieldname": "diet_plan",
+   "fieldname": "workout_plan",
    "fieldtype": "Link",
    "hidden": 0,
    "label": "Goal",
    "max_length": 0,
    "max_value": 0,
-   "options": "Diet Plan",
+   "options": "Workout Plan",
    "read_only": 1,
    "reqd": 0,
    "show_in_filter": 0
   },
   {
    "allow_read_on_all_link_options": 0,
-   "fieldname": "total_days_of_diet",
+   "fieldname": "no_of_days",
    "fieldtype": "Int",
    "hidden": 0,
-   "label": "Total Days of Diet",
+   "label": "No of Days",
    "max_length": 0,
    "max_value": 0,
    "read_only": 1,
@@ -145,5 +146,6 @@
    "reqd": 0,
    "show_in_filter": 0
   }
- ]
+ ],
+ "web_page_link_text": ""
 }

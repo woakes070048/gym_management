@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-06 16:48:49.659024",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "workout",
+  "gym_exercise",
+  "sets",
+  "repetition",
+  "repetition_days"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "workout",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Workout",
+   "options": "Workout",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "gym_exercise",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Gym Exercise",
+   "options": "Gym Exercise",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "sets",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Sets",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "repetition",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Repetition",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "repetition_days",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Repetition Days",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-07-06 16:59:36.426179",
+ "modified_by": "Administrator",
+ "module": "GYM Management",
+ "name": "Workout Routine",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
