@@ -864,14 +864,14 @@
    "_comments": null,
    "_liked_by": null,
    "_user_tags": null,
-   "creation": "2022-07-06 15:24:36.121733",
+   "creation": "2022-07-06 17:48:02.948858",
    "default_value": null,
    "doc_type": "Customer",
    "docstatus": 0,
    "doctype_or_field": "DocType",
    "field_name": null,
    "idx": 0,
-   "modified": "2022-07-06 15:24:36.121733",
+   "modified": "2022-07-06 17:48:02.948858",
    "modified_by": "Administrator",
    "name": "Customer-main-links_order",
    "owner": "Administrator",
@@ -881,7 +881,7 @@
    "property": "links_order",
    "property_type": "Small Text",
    "row_name": null,
-   "value": "[\"df84d62198\", \"d9f66b8656\", \"d94c2f8742\", \"dcc2c152d7\"]"
+   "value": "[\"df84d62198\", \"d9f66b8656\", \"d94c2f8742\", \"dcc2c152d7\", \"055d4c7de2\"]"
   },
   {
    "_assign": null,

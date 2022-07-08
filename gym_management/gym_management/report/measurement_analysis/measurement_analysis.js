@@ -8,7 +8,7 @@ frappe.query_reports["Measurement Analysis"] = {
 			"fieldname": "name",
 			"label": __("Measurement ID"),
 			"fieldtype": "Link",
-			"options": "Measurement History",
+			"options": "Measurement History"
 		},
 		{
 			"fieldname": "customer",
@@ -24,7 +24,7 @@ frappe.query_reports["Measurement Analysis"] = {
 			"label": __("From Date"),
 			"fieldtype": "Date",
 			"reqd": 1,
-			"default": frappe.datetime.add_months(frappe.datetime.get_today(), -1),
+			"default": frappe.datetime.add_months(frappe.datetime.get_today(), -1)
 		},
 		{
 			"fieldname":"to_date",
@@ -32,6 +32,16 @@ frappe.query_reports["Measurement Analysis"] = {
 			"fieldtype": "Date",
 			"reqd": 1,
 			"default": frappe.datetime.get_today()
-		},
+		}
 	],
+	onload: function(report) {
+		const views_menu = report.page.add_custom_button_group(__('Analysis Report'));
+		report.page.add_custom_menu_item(views_menu, __("Diet Schedule Analysis"), function() {
+			frappe.set_route('query-report', 'Diet Schedule Analysis');
+		});
+
+		report.page.add_custom_menu_item(views_menu, __("Workout Schedule Analysis"), function() {
+			frappe.set_route('query-report', 'Workout Schedule Analysis');
+		});
+	}
 };

@@ -21,7 +21,9 @@
   {
    "fieldname": "exercise_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Exercise Name",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -60,7 +62,8 @@
    "fieldname": "item_group",
    "fieldtype": "Table MultiSelect",
    "label": "Gym Exercise For",
-   "options": "Gym Exercise For"
+   "options": "Gym Exercise For",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_8",
@@ -69,7 +72,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-05 11:42:20.584443",
+ "modified": "2022-07-06 16:30:44.631063",
  "modified_by": "Administrator",
  "module": "GYM Management",
  "name": "Gym Exercise",
