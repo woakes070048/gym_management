@@ -24,7 +24,7 @@
  "is_standard": 1,
  "login_required": 1,
  "max_attachment_size": 0,
- "modified": "2022-07-07 14:04:07.883562",
+ "modified": "2022-07-08 17:56:54.734748",
  "modified_by": "Administrator",
  "module": "GYM Management",
  "name": "assign-workout-schedule",
@@ -40,6 +40,7 @@
   {
    "enabled": 1,
    "reference_doctype": "Assign Diet Schedule",
+   "role": "Guest",
    "route": "/assign-diet-schedule",
    "title": "My Diet Schedule"
   }
