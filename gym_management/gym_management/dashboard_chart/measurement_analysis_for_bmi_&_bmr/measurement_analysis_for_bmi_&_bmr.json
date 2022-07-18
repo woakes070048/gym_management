@@ -1,0 +1,37 @@
+{
+ "chart_name": "Measurement Analysis for BMI & BMR",
+ "chart_type": "Report",
+ "creation": "2022-07-14 18:02:00.364978",
+ "custom_options": "{\"x_field\": \"customer\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"bmi\", \"color\": \"#29CD42\"}, {\"idx\": 2, \"__islocal\": true, \"name\": \"row 2\", \"y_field\": \"bmr\", \"color\": \"#ED6396\"}], \"y_fields\": [\"bmi\", \"bmr\"], \"colors\": [\"#29CD42\", \"#ED6396\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{\"group_by\":\"1\",\"from_date\":\"frappe.datetime.add_months(frappe.datetime.get_today(), -1)\",\"to_date\":\"frappe.datetime.nowdate()\"}",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2022-07-15 10:43:24.459685",
+ "modified_by": "Administrator",
+ "module": "GYM Management",
+ "name": "Measurement Analysis for BMI & BMR",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Measurement Analysis",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "customer",
+ "y_axis": [
+  {
+   "color": "#29CD42",
+   "y_field": "bmi"
+  },
+  {
+   "color": "#ED6396",
+   "y_field": "bmr"
+  }
+ ]
+}

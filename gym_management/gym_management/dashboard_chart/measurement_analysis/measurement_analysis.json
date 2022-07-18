@@ -1,0 +1,45 @@
+{
+ "chart_name": "Measurement Analysis",
+ "chart_type": "Report",
+ "creation": "2022-07-15 10:47:43.162931",
+ "custom_options": "",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{\"from_date\":\"frappe.datetime.add_months(frappe.datetime.get_today(), -1)\",\"to_date\":\"frappe.datetime.get_today()\",\"group_by\":\"1\"}",
+ "filters_json": "{\"from_date\":\"2022-06-15\",\"to_date\":\"2022-07-15\"}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2022-07-15 10:55:21.980336",
+ "modified_by": "Administrator",
+ "module": "GYM Management",
+ "name": "Measurement Analysis",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Measurement Analysis",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "customer",
+ "y_axis": [
+  {
+   "color": "#4463F0",
+   "y_field": "weight"
+  },
+  {
+   "color": "#ED6396",
+   "y_field": "height"
+  },
+  {
+   "color": "#CB2929",
+   "y_field": "bmi"
+  },
+  {
+   "color": "#761ACB",
+   "y_field": "bmr"
+  }
+ ]
+}

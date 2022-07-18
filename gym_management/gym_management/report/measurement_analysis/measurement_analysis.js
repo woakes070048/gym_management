@@ -32,6 +32,12 @@ frappe.query_reports["Measurement Analysis"] = {
 			"fieldtype": "Date",
 			"reqd": 1,
 			"default": frappe.datetime.get_today()
+		},
+		{
+			"fieldname":"group_by",
+			"label": __("Group By Member with Average"),
+			"fieldtype": "Check",
+			"width": 100
 		}
 	],
 	onload: function(report) {

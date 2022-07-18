@@ -309,7 +309,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-07-08 14:41:05.109973",
+ "modified": "2022-07-14 18:12:57.648152",
  "modified_by": "Administrator",
  "module": "GYM Management",
  "name": "Gym Management",
@@ -383,16 +383,16 @@
    "type": "DocType"
   },
   {
-   "doc_view": "",
-   "label": "Appointment",
-   "link_to": "Appointment",
-   "type": "DocType"
-  },
-  {
    "doc_view": "Calendar",
    "label": "Appointment Schedule",
    "link_to": "Event",
    "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Dashboard",
+   "link_to": "Gym Management",
+   "type": "Dashboard"
   }
  ]
 }
