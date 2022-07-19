@@ -8,3 +8,31 @@ frappe.ui.form.on('Assign Diet Schedule', {
 	    frm.set_value("title", frm.doc.customer+"'s Diet Plan For "+frm.doc.diet_plan);
 	}
 });
+
+frappe.ui.form.on('Assign Diet Schedule', {
+    refresh(frm) {
+        frm.add_custom_button(__("Get Diet Plan"), function() {
+            new frappe.ui.form.MultiSelectDialog({
+                doctype: "Diet Plan",
+                target: cur_frm,
+                setters: {
+                    total_days_of_diet: null,
+                },
+                get_query() {
+                    return {
+                        filters: { docstatus: ['!=', 2] }
+                    };
+                },
+                primary_action_label: 'Get Diet Plan',
+                action(selections) {
+                    let leng = selections.length;
+                    for (let i = 0; i < leng; i++) {
+                        let plan_name = selections[i];
+                        frm.set_value('diet_plan',plan_name);
+                    }
+                    $(".modal").modal("hide");
+                }
+            });
+        });
+    }
+});
