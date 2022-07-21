@@ -316,9 +316,18 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Gym Events/Meetings",
+   "link_to": "Gym Schedule",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2022-07-18 12:29:06.005607",
+ "modified": "2022-07-21 13:17:27.269706",
  "modified_by": "Administrator",
  "module": "GYM Management",
  "name": "Gym Management",

@@ -1,0 +1,36 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-07-21 10:48:27.586927",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "SCS",
+ "modified": "2022-07-21 10:49:30.908687",
+ "modified_by": "Administrator",
+ "module": "GYM Management",
+ "name": "Gym Schedule",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Event",
+ "report_name": "Gym Schedule",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "All"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Gym Operator"
+  },
+  {
+   "role": "Gym Manager"
+  }
+ ]
+}

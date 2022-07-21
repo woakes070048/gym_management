@@ -23,7 +23,7 @@ ___
 
 #### Key Features of Gym Management
 1. Equipment and Equipment Type
-2. Register Member and Register Member
+2. Register Member and Register Member Type
 3. Measurement History
 4. Member and Membership
 5. Trainer, Trainer Skill, and Trainer Attendance
